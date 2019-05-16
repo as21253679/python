@@ -10,24 +10,16 @@ void motor(bool dir)//right=true,left=false
 	if (dir == true)
 	{
 		if (motor_value + adder > max)
-		{
 			motor_value = -max + (adder - (max - motor_value));
-		}
 		else
-		{
 			motor_value = motor_value + adder;
-		}
 	}
 	else if (dir == false)
 	{
 		if (motor_value - adder < -max)
-		{
 			motor_value = max - (adder - (max + motor_value));
-		}
 		else
-		{
 			motor_value = motor_value - adder;
-		}
 	}
 }
 
@@ -48,13 +40,9 @@ int main()
 			current = motor_value;
 
 			if (current < before)
-			{
-				count += (max - before) + (current + max);
-			}
+				count += (current - before) + 2 * max;
 			else
-			{
 				count += current - before;
-			}
 		}
 		else if (input == 'l')
 		{
@@ -63,13 +51,9 @@ int main()
 			current = motor_value;
 
 			if (current > before)
-			{
-				count += (-max - before) + (current - max);
-			}
+				count += (current - before) - 2 * max;
 			else
-			{
 				count += current - before;
-			}
 		}
 		printf("%d\r\n", count);
 	}
