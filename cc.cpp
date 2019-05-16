@@ -1,9 +1,8 @@
 #include<iostream>
 using namespace std;
 #define max 510
-#define adder 100
+#define adder 300
 
-int arr[100] = { 0,100,200,300,400,500,-420,-320,-220,-120,-20,80,180,280,380,480,-440,-340,-240,-140,-40,60,160 };
 int motor_value = 0;
 
 void motor(bool dir)//right=true,left=false
@@ -44,7 +43,7 @@ int main()
 		cin >> input;
 		if (input == 'r')
 		{
-			before = motor_value;
+			before = current;
 			motor(true);
 			current = motor_value;
 
