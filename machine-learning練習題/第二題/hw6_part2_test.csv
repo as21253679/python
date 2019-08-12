@@ -1,0 +1,6 @@
+,PassengerId,Pclass,Name,Sex,Age,SibSp,Parch,Ticket,Fare,Cabin,Embarked
+23,24,1,"Sloper, Mr. William Thompson",male,28,0,0,113788,35.5,A6,S
+605,606,3,"Lindell, Mr. Edvard Bengtsson",male,36,1,0,349910,15.55,,S
+452,453,1,"Foreman, Mr. Benjamin Laventall",male,30,0,0,113051,27.75,C111,C
+321,322,3,"Danoff, Mr. Yoto",male,27,0,0,349219,7.8958,,S
+151,152,1,"Pears, Mrs. Thomas (Edith Wearne)",female,22,1,0,113776,66.6,C2,S
